@@ -8,7 +8,7 @@ class PositiveBigIntegerField(BigIntegerField):
     description = _("Big (8 byte) positive integer")
 
     def db_type(self, connection):
-        return "bigint UNSIGNED"
+        return "bigint"
 
     def get_internal_type(self):
         return "PositiveSmallIntegerField"
